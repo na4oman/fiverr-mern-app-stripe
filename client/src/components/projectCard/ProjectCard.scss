@@ -1,0 +1,65 @@
+.project-card {
+  height: 360px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  img {
+    height: 280px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+  }
+
+  .info {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0 12px 16px;
+
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .gig-info {
+      display: flex;
+      flex-direction: column;
+      // gap: 2px;
+      font-size: 14px;
+      line-height: 21px;
+      color: #62646a;
+      font-family: 'Montserrat', sans-serif;
+
+      .cat {
+        font-weight: bold;
+        color: #404145;
+      }
+
+      .user {
+        color: #95979d;
+      }
+    }
+  }
+
+  // .desc {
+  //   position: absolute;
+  //   top: 15px;
+  //   left: 15px;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   display: block;
+  // }
+
+  // .title {
+  //   position: absolute;
+  //   top: 40px;
+  //   left: 15px;
+  //   font-size: 24px;
+  //   font-weight: 700;
+  //   display: block;
+  // }
+}

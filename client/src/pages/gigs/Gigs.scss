@@ -1,0 +1,134 @@
+.gigs {
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    width: 1400px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .breadcrumbs {
+      color: #62646a;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      line-height: 18px;
+
+      span {
+        cursor: pointer;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      svg {
+        fill: #62646a;
+      }
+    }
+
+    h1 {
+      color: #222325;
+      font-size: 32px;
+    }
+
+    p {
+      color: #95979d;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .sort {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        align-items: stretch;
+        gap: 5px;
+        color: #95979d;
+
+        span {
+          color: rgb(78, 78, 78);
+          align-self: center;
+        }
+
+        input {
+          width: 120px;
+          outline: none;
+          padding: 3px 5px;
+          border: 1px solid lightgray;
+        }
+
+        button {
+          background-color: #1cbd72;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background-color: #189f60;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        position: relative;
+
+        .sort-by {
+          color: #62646a;
+          font-weight: 400;
+        }
+
+        .best-selling {
+          color: #222325;
+          font-weight: 700;
+        }
+
+        svg {
+          cursor: pointer;
+          fill: #74767e;
+        }
+
+        .menu {
+          position: absolute;
+          top: 25px;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          border: 0.5px solid rgb(227, 227, 227);
+          padding: 10px 20px;
+          z-index: 2;
+          border-radius: 5px;
+          font-size: 14px;
+          color: #62646a;
+          background-color: #fff;
+
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

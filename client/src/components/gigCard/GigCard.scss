@@ -1,0 +1,118 @@
+.gig-card {
+  width: 324px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e4e5e7;
+  // border-bottom: 10px solid #e4e5e7;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .seller-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    span {
+      color: #222325;
+      line-height: 18px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+
+  h3 {
+    word-wrap: break-word;
+    word-break: break-word;
+    color: #222325;
+    font-weight: 400;
+    height: 43px;
+    line-height: 22px;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 0 12px 5px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+
+    &:hover {
+      color: #1dbf73;
+    }
+  }
+
+  .content-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    // justify-content: space-between;
+    padding: 10px 12px;
+
+    svg {
+      color: #ffbe5b;
+      font-weight: 700;
+    }
+
+    .rating {
+      color: #b5b6ba;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+
+      span {
+        margin-right: 2px;
+        color: #ffbe5b;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // border-top: 1px solid #efeff0;
+    // border-bottom: 1px solid #efeff0;
+    clear: both;
+    min-height: 24px;
+    padding: 10px 12px;
+
+    svg {
+      fill: #b5b6ba;
+      cursor: pointer;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+
+      .text {
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #74767e;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        vertical-align: top;
+      }
+
+      .details {
+        color: #404145;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: right;
+      }
+    }
+  }
+}

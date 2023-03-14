@@ -1,0 +1,65 @@
+.features {
+  display: flex;
+  justify-content: center;
+  background-color: #f1fdf7;
+  padding: 100px 0;
+  font-family: 'Montserrat', sans-serif;
+
+  .wrapper {
+    width: 1400px;
+    display: flex;
+    gap: 50px;
+
+    .text {
+      flex: 2;
+      color: #404145;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 140px 0 20px;
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          h6 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+          }
+
+          .icon {
+            color: gray;
+            width: 25px;
+            height: 25px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 26px;
+            color: #62646a;
+          }
+        }
+      }
+    }
+
+    .video {
+      flex: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
